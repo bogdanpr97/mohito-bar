@@ -1,6 +1,7 @@
-import { useGSAP } from "@gsap/react";
-import { navLinks } from "../../constants/index.ts";
 import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+
+import { navLinks } from "../../constants/index.js";
 
 const Navbar = () => {
   useGSAP(() => {
@@ -10,6 +11,7 @@ const Navbar = () => {
         start: "bottom top",
       },
     });
+
     navTween.fromTo(
       "nav",
       { backgroundColor: "transparent" },
@@ -27,12 +29,13 @@ const Navbar = () => {
       <div>
         <a href="#home" className="flex items-center gap-2">
           <img src="/images/logo.png" alt="logo" />
-          <p>Mohito Bar</p>
+          <p>Velvet Pour</p>
         </a>
+
         <ul>
           {navLinks.map((link) => (
             <li key={link.id}>
-              <a href={link.id}>{link.title}</a>
+              <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
         </ul>
@@ -40,5 +43,4 @@ const Navbar = () => {
     </nav>
   );
 };
-
 export default Navbar;
