@@ -1,3 +1,15 @@
+import profile1 from "../src/assets/images/profile1.png";
+import profile2 from "../src/assets/images/profile2.png";
+import profile3 from "../src/assets/images/profile3.png";
+import profile4 from "../src/assets/images/profile4.png";
+import instaIcon from "../src/assets/images/insta.png";
+import xIcon from "../src/assets/images/x.png";
+import fbIcon from "../src/assets/images/fb.png";
+import drink1 from "../src/assets/images/drink1.png";
+import drink2 from "../src/assets/images/drink2.png";
+import drink3 from "../src/assets/images/drink3.png";
+import drink4 from "../src/assets/images/drink4.png";
+
 const navLinks = [
   {
     id: "cocktails",
@@ -73,16 +85,16 @@ const mockTailLists = [
 
 const profileLists = [
   {
-    imgPath: "/images/profile1.png",
+    imgPath: profile1,
   },
   {
-    imgPath: "/images/profile2.png",
+    imgPath: profile2,
   },
   {
-    imgPath: "/images/profile3.png",
+    imgPath: profile3,
   },
   {
-    imgPath: "/images/profile4.png",
+    imgPath: profile4,
   },
 ];
 
@@ -119,17 +131,17 @@ const openingHours = [
 const socials = [
   {
     name: "Instagram",
-    icon: "/images/insta.png",
+    icon: instaIcon,
     url: "#",
   },
   {
     name: "X (Twitter)",
-    icon: "/images/x.png",
+    icon: xIcon,
     url: "#",
   },
   {
     name: "Facebook",
-    icon: "/images/fb.png",
+    icon: fbIcon,
     url: "#",
   },
 ];
@@ -138,7 +150,7 @@ const allCocktails = [
   {
     id: 1,
     name: "Classic Mojito",
-    image: "/images/drink1.png",
+    image: drink1,
     title: "Simple Ingredients, Bold Flavor",
     description:
       "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
@@ -146,7 +158,7 @@ const allCocktails = [
   {
     id: 2,
     name: "Raspberry Mojito",
-    image: "/images/drink2.png",
+    image: drink2,
     title: "A Zesty Classic That Never Fails",
     description:
       "The Margarita is a classic that balances tangy lime, smooth tequila, and a touch of sweetness. Shaken, frozen, or on the rocks—it’s always crisp & refreshing.",
@@ -154,7 +166,7 @@ const allCocktails = [
   {
     id: 3,
     name: "Violet Breeze",
-    image: "/images/drink3.png",
+    image: drink3,
     title: "Simple Ingredients, Bold Flavor",
     description:
       "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
@@ -162,7 +174,7 @@ const allCocktails = [
   {
     id: 4,
     name: "Curacao Mojito",
-    image: "/images/drink4.png",
+    image: drink4,
     title: "Crafted With Care, Poured With Love",
     description:
       "Each cocktail is made with fresh ingredients and a passion for perfecting every pour, whether you're celebrating or simply relaxing.",
