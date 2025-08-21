@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 import leftLeaf from "../assets/images/hero-left-leaf.png";
 import rightLeaf from "../assets/images/hero-right-leaf.png";
+import heroVideo from "../assets/videos/output.mp4";
 
 const Hero = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -113,7 +114,7 @@ const Hero = () => {
           muted
           playsInline
           preload="auto"
-          src="../assets/videos/output.mp4"
+          src={heroVideo}
         />
       </div>
     </>
