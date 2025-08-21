@@ -4,6 +4,10 @@ import { allCocktails } from "../../constants/index.js";
 import { useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import leftLeaf from "../assets/images/slider-left-leaf.png";
+import rightLeaf from "../assets/images/slider-right-leaf.png";
+import rightArrow from "../assets/images/right-arrow.png";
+import leftArrow from "../assets/images/left-arrow.png";
 
 const Menu = () => {
   const contentRef = useRef<HTMLDivElement>(null);
@@ -61,16 +65,8 @@ const Menu = () => {
 
   return (
     <section id="menu" aria-labelledby="menu-heading">
-      <img
-        src="/images/slider-left-leaf.png"
-        alt="left-leaf"
-        id="m-left-leaf"
-      />
-      <img
-        src="/images/slider-right-leaf.png"
-        alt="right-leaf"
-        id="m-right-leaf"
-      />
+      <img src={leftLeaf} alt="left-leaf" id="m-left-leaf" />
+      <img src={rightLeaf} alt="right-leaf" id="m-right-leaf" />
 
       <h2 id="menu-heading" className="sr-only">
         Cocktail Menu
@@ -101,11 +97,7 @@ const Menu = () => {
             onClick={() => goToSlide(currentIndex - 1)}
           >
             <span>{prevCocktail.name}</span>
-            <img
-              src="/images/right-arrow.png"
-              alt="right-arrow"
-              aria-hidden="true"
-            />
+            <img src={rightArrow} alt="right-arrow" aria-hidden="true" />
           </button>
 
           <button
@@ -113,11 +105,7 @@ const Menu = () => {
             onClick={() => goToSlide(currentIndex + 1)}
           >
             <span>{nextCocktail.name}</span>
-            <img
-              src="/images/left-arrow.png"
-              alt="left-arrow"
-              aria-hidden="true"
-            />
+            <img src={leftArrow} alt="left-arrow" aria-hidden="true" />
           </button>
         </div>
 

@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import logo from "../assets/images/logo.png";
 
 import { navLinks } from "../../constants/index.js";
 
@@ -28,7 +29,7 @@ const Navbar = () => {
     <nav>
       <div>
         <a href="#home" className="flex items-center gap-2">
-          <img src="/images/logo.png" alt="logo" />
+          <img src={logo} alt="logo" />
           <p>Velvet Pour</p>
         </a>
 
